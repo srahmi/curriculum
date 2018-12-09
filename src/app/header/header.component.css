@@ -1,0 +1,19 @@
+.pic-mask {
+  min-width: 90px;
+  max-width: 300px;
+  width: 20%;
+  border-radius: 50%;
+  margin: 1em auto 3em;
+  overflow: hidden;
+}
+
+.pic-img {
+  /*display: block;*/
+  width: 100%;
+  height: auto;
+}
+
+.jumbotron
+{
+  /*background-color: #474e5d !important;*/
+}
