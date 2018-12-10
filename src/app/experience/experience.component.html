@@ -1,0 +1,7 @@
+<div class="content" [@scrollAnimation]="state">
+  <h2>{{experience.client}}</h2>
+  <p class="font-weight-light">{{experience.title}}<br>
+    <small>{{experience.from}} - {{experience.to}}</small>
+  </p>
+  <span *ngFor="let tech of experience.technologies" class="badge badge-pill badge-dark mx-1">{{tech}}</span>
+</div>

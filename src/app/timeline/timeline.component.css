@@ -7,12 +7,6 @@
   font-family: Helvetica, sans-serif;
 }
 
-.badge{
-  border: 1px solid #B0BEC5;
-  color: #000000;
-  background-color: transparent;
-}
-
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
@@ -95,15 +89,6 @@
 /* Fix the circle for containers on the right side */
 .right::after {
   left: -12px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
