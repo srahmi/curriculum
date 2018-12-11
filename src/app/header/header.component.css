@@ -13,7 +13,5 @@
   height: auto;
 }
 
-.jumbotron
-{
-  /*background-color: #474e5d !important;*/
-}
+.jumbotron {position:relative;}
+#buttonmenu {position:absolute; top:5px; right:5px;}

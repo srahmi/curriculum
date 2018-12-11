@@ -1,5 +1,5 @@
 <div class="timeline">
-  <div *ngFor="let experience of experiences">
+  <div *ngFor="let experience of experiences" >
     <div [ngClass]="isLeft() ? 'timeline-container left' : 'timeline-container right'">
       <app-experience [experience]="experience"></app-experience>
       <!--<div class="content">-->

@@ -60,7 +60,5 @@ export class TimelineComponent implements OnInit {
     } else {
       this.state = 'hide';
     }
-
   }
-
 }
