@@ -1,7 +1,11 @@
 <div class="shadow-sm p-3 mb-5 bg-white rounded jumbotron jumbotron-fluid">
-  <div id="buttonmenu">    <button class="btn btn-outline-primary">
-    <img src="assets/images/english.png" width="30" />
-  </button></div>
+  <div id="particles-js"></div>
+  <div class="" id="buttonmenu">
+    <img *ngIf="isEnglish; else frenchFlag" src="assets/images/english.png" width="30" (click)="toggleLanguage()"/>
+  </div>
+  <ng-template #frenchFlag>
+    <img src="assets/images/french.png" width="30" (click)="toggleLanguage()"/>
+  </ng-template>
   <div class="container">
     <div class="pic-mask">
       <img src="assets/images/DSC_0371.jpg" class=" pic-img" alt="this is me">
@@ -13,3 +17,24 @@
       technologies around it: JEE specification and frameworks like Spring and Hibernate.</p>
   </div>
 </div>
+
+<!--<div class="jshadow-sm p-3 mb-5 bg-white rounded jumbotron jumbotron-fluid">-->
+  <!--<div id="particles-js"><canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas></div>&lt;!&ndash; /.particles div &ndash;&gt;-->
+  <!--<div class="container center-vertically-holder">-->
+    <!--<div class="center-vertically">-->
+      <!--<div class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">-->
+        <!--<h1 class="scaleReveal" data-sr-id="46" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">-->
+          <!--A template with a bit of a different <strong>look &amp; feel</strong>.-->
+        <!--</h1>-->
+        <!--<hr class="bottomReveal" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">-->
+        <!--<p class="bottomReveal" data-sr-id="2" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">Particles is a fun and multipurpose template, with clean &amp; modern design <i>+</i>&nbsp; code.</p>-->
+        <!--<a href="#ideology" data-id="ideology" class="scroll-link">-->
+          <!--<div class="scroll-indicator rotateBottomReveal" data-sr-id="40" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1) rotateX(0); opacity: 1;transform: translateY(0) scale(1) rotateX(0); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">-->
+            <!--<span class="ion-mouse"></span><br>-->
+            <!--<span class="ion-android-arrow-down arrow-scroll-indicator"></span>-->
+          <!--</div>-->
+        <!--</a>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->

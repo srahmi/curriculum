@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+
+declare var particlesJS: any;
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  isEnglish = false;
 
-  ngOnInit() {
+  constructor() {
   }
 
+  ngOnInit() {
+    particlesJS.load('particles-js', 'assets/particlesjs-config.json', null);
+  }
+
+  toggleLanguage(): boolean {
+    return this.isEnglish = !this.isEnglish;
+  }
 }
