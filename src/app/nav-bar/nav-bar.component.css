@@ -1,6 +1,11 @@
 .the-blur{
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+  background-color: #000000;
+  border: 1px solid #ffffff;
+}
+.navbar a{
+  color: white;
+}
+
+.navbar a:hover{
+  color: deeppink;
 }

@@ -1,14 +1,31 @@
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background: none;
   position: relative;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*border-radius: 6px;*/
+  border: 1px solid #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.content:hover{
+  border-color: deeppink;
+}
+
+.content h2{
+  color: #fff;
+}
+
+.content p{
+  color: #fff;
 }
 
 .badge{
-  border: 1px solid #B0BEC5;
-  color: #000000;
+  border: 1px solid #ffffff;
+  color: #fff;
   background-color: transparent;
+}
+
+.fa-terminal{
+  color: lawngreen;
 }

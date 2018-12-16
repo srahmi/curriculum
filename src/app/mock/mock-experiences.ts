@@ -7,7 +7,7 @@ export const EXPERIENCES: Experience[] = [
     from: new Date('2017-12-01'),
     to: new Date(),
     title: 'Full-stack developer',
-    technologies: ['Angular', 'Java'],
+    technologies: ['Angular', 'Java', 'Spring boot', 'Hibernate', 'Docker', 'REST API', 'TDD', 'Microservices architecture'],
     description: ''
   },
   {
