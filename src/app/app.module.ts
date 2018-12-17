@@ -8,6 +8,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ExperienceComponent } from './experience/experience.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ExperienceComponent } from './experience/experience.component';
     HeaderComponent,
     TimelineComponent,
     NavBarComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
